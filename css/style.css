@@ -10,7 +10,10 @@
   --footer-addr-color: #ffffff;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --footer-background-color: #2f303a;
+  --white: #ffffff;
 }
+
+/* ==================== INDEX.HTML ==================== */
 
 /* ========== GENERAL STYLES ========== */
 body {
@@ -38,6 +41,11 @@ address {
 }
 
 /* ========== HEADER ========== */
+
+.header .current {
+  color: var(--accent-color);
+}
+
 .logo {
   font-family: var(--logo-font);
   font-weight: 700;
@@ -185,4 +193,43 @@ address {
 .footer-contact-link:hover,
 .footer-contact-link:focus {
   color: var(--accent-color);
+}
+
+/* ==================== PORTFOLIO.HTML ==================== */
+
+/* ========== FILTERS ========== */
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white);
+  background-color: var(--accent-color);
+}
+
+/* ========== PORTFOLIO LIST ========== */
+.portfolio-link-img {
+  width: 370px;
+  height: 294px;
+}
+.portfolio-link-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--title-color);
+}
+
+.portfolio-link-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
 }
